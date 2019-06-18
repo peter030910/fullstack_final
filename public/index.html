@@ -9,6 +9,24 @@
     </script>
   </head>
   <body>
-    <!-- TODO(you): Add the HTML necessary to complete your final project. -->
+    <form class="box" action="index.html" method="post">
+      <div class="box_container">
+        <div class="front">
+          <h1>login</h1>
+          <input type="text" name="" id='username' placeholder="Username">
+          <input type="password" name="" id='password' placeholder="Password">
+          <input type="button" name="" value="Login" id='login_button' onclick="form_receive()">
+          <div id='sign_up' onclick="sign_up()" >sign up</div>
+        </div>
+        <div class="back hidden">
+            <h1>sign up</h1>
+            <input type="text" name="" id='username' placeholder="Username">
+            <input type="password" name="" id='password' placeholder="Password">
+            <input type="button" name="" value="Sign up" id='login_button' onclick="register()">
+            <div id='login' onclick="login()" >log in</div>
+          </div>
+      </div>
+    </form>
+    
   </body>
 </html>

@@ -1,16 +1,51 @@
-function form_receive(){
-    const usernameElement = document.getElementById('username');
-    const passwordElement = document.getElementById('password');
+async function form_receive(){
+    const usernameElement = document.getElementById('login_username');
+    const passwordElement = document.getElementById('login_password');
     const username = usernameElement.value;
     const password = passwordElement.value;
-    console.log(username+password);
+    const message = {
+        username : username,
+        password : password
+    };
+    const fetchOptions = {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(message)
+    };
+    const record = await fetch('/login',fetchOptions);
+    const status = await record.text();
+    if(status=="Success") 
+    window.location.href='/levelpage';
+    else alert("Wrong Information");
 }
-function register(){
-    const usernameElement = document.getElementById('username');
-    const passwordElement = document.getElementById('password');
+async function register(){
+    const usernameElement = document.getElementById('regis_username');
+    const passwordElement = document.getElementById('regis_password');
     const username = usernameElement.value;
     const password = passwordElement.value;
-    console.log(username+password);
+    const message = {
+        username : username,
+        password : password
+    };
+    const fetchOptions = {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(message)
+    };
+    const record = await fetch('/register',fetchOptions);
+    const status = await record.json();
+    if(status.response=="success"){
+        window.location.href='/levelpage';
+    }
+    else{
+        alert("The username has been used");
+    }
 }
 function sign_up(){
     const boxElement = document.querySelector('.box');

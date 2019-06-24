@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>CS193x Final Project</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/script.js" defer></script>
+    </script>
+  </head>
+  <body>
+    <form class="box" action="index.html" method="post">
+      <div class="box_container">
+        <div class="front">
+          <h1>login</h1>
+          <input type="text" name="" id='login_username' placeholder="Username">
+          <input type="password" name="" id='login_password' placeholder="Password">
+          <input type="button" name="" value="Login" id='login_button' onclick="form_receive()">
+          <div id='sign_up' onclick="sign_up()" >sign up</div>
+        </div>
+        <div class="back hidden">
+            <h1>sign up</h1>
+            <input type="text" name="" id ="regis_username" placeholder="Username">
+            <input type="password" name="" id='regis_password' placeholder="Password">
+            <input type="button" name="" value="Sign up" id='register_button' onclick="register()">
+            <div id='login' onclick="login()" >log in</div>
+          </div>
+      </div>
+    </form>
+    
+  </body>
+</html>
+

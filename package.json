@@ -4,12 +4,14 @@
   "description": "CS193X Final Project",
   "main": "server.js",
   "engines": {
-    "node": ">=8.0.0 <11.0.0" 
+    "node": ">=8.0.0 <11.0.0"
   },
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "gsa-sheets": "^1.0.2"
+    "express-handlebars": "^3.1.0",
+    "gsa-sheets": "^1.0.2",
+    "handlebars": "^4.1.2"
   },
   "scripts": {
     "start": "node server.js",

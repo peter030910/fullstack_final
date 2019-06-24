@@ -1,0 +1,34 @@
+body{
+    margin:0px;
+    padding:0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 227, 156);
+}
+.back{
+    margin-top:50px;
+    padding-left: 200px;
+    font-family: sans-serif;
+    color: rgb(38, 55, 65);
+    cursor: pointer; 
+}
+.record{
+    height: 400px;
+    width: 300px;  
+    background-color: rgb(66, 138, 160);
+    text-align: center;
+    padding-top: 50px;
+    font-family: Verdana, sans-serif;
+}
+.footer{
+    margin-top: 30px;
+    font-size: 25px;
+}
+.amount{
+    font-size: 100px;
+}
+h1{
+    font-family: Verdana, sans-serif;
+}

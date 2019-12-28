@@ -11,7 +11,7 @@
     "express": "^4.15.2",
     "express-handlebars": "^3.1.0",
     "gsa-sheets": "^1.0.2",
-    "handlebars": "^4.1.2"
+    "handlebars": "^4.3.0"
   },
   "scripts": {
     "start": "node server.js",
